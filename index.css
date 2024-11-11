@@ -1,0 +1,169 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;    
+}
+
+/* header */
+
+.fixed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    margin-top: 0;
+    z-index: 1000;
+    top: 0; 
+    left: 0;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    align-items: end;
+    margin-right: 10px;
+    color: seashell;
+}
+
+/* mission */
+
+.mission {
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    margin: 0 20px 70px 20px;
+    position: relative;
+}
+
+.img-mission img {
+    width: 1200px;
+    height: 700px;
+}
+
+.mission-statement {    
+    position: absolute;
+    top: 50%; /* Adjust this as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: black;
+}
+
+/* Tea of the Month */
+
+.main-selection {
+    display: inline-flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.panel {
+    flex: 0 1 calc(33.33% - 20px); /* Each panel takes roughly one-third of the container width, minus gap */
+    max-width: 300px; /* Optional: Set a max width for each panel */
+}
+
+.panel img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.panel figure {
+    display: flex;
+    flex-direction: column; /* Stack the image and caption vertically */
+    align-items: center; /* Center-aligns the content horizontally */
+}
+
+.panel figcaption {
+    text-align: center; /* Centers the text within the figcaption element */
+}
+
+/* locations */
+
+.locations {
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    margin: 70px 20px 0px 20px;
+    position: relative;
+    min-height: 600px;
+}
+
+.img-container {
+    position: relative; 
+    overflow: hidden; /* when something is hidden, this comes in handy ig */
+}
+
+.location-heading {
+    position: absolute;
+    top: 10%; /* Adjust this for desired spacing */
+    left: 50%;  /* Horizontally center */
+    transform: translate(-50%, -50%);  /* Adjust for perfect centering */
+}
+
+.img-container img {
+    height: 700px;
+    width: 1200px;
+}
+
+
+.combined-panels {
+    position: absolute;
+    display: inline-flex;
+    top: 50%; /* Adjust this as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 40px;
+}
+
+.location-panel {
+    background-color: black;
+    opacity: 1;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* contact */
+
+.contact {
+    margin-top: 40px;
+    height: 200px;
+}
+
+.copyright {
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
